@@ -3,7 +3,7 @@ function Header() {
 		<header>
 			<h1>nextflix</h1>
 
-			<ul>
+			<ul className='bg-[aqua] text-[#fff]'>
 				<li>menu</li>
 				<li>menu</li>
 				<li>menu</li>
