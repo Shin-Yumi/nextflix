@@ -2,12 +2,12 @@ import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyCG5kKIpqQN_7YJ6wYWhvNzOB8x_P4jUnc',
-	authDomain: 'dcode-may.firebaseapp.com',
-	projectId: 'dcode-may',
-	storageBucket: 'dcode-may.appspot.com',
-	messagingSenderId: '538598286383',
-	appId: '1:538598286383:web:2eb6c7c0cdef0ae70a52da',
+	apiKey: 'AIzaSyB7DhSo1zMivirNMpGcU2OeX73sPxZNekI',
+	authDomain: 'react2023-9df28.firebaseapp.com',
+	projectId: 'react2023-9df28',
+	storageBucket: 'react2023-9df28.appspot.com',
+	messagingSenderId: '353235598540',
+	appId: '1:353235598540:web:ce2c8c507a71984b629669',
 };
 
 //firebase로 구동한 app이 없으면 아직 인증처리가 되지 않은 상태에서만 초기화
