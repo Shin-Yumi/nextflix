@@ -23,7 +23,7 @@ function Banner({ original }: Props) {
 	console.log(TV);
 
 	return (
-		<section className='flex flex-col space-y-2 py-16 pt-[40vh] md:space-y-4 lg:h[65vh] lg:justify-end lg:pb-12'>
+		<section className='flex flex-col space-y-2 py-16 pt-[40vh] md:space-y-4 lg:h[90vh] lg:justify-end lg:pb-12'>
 			<div className='absolute top-0 left-0 z-[1] h-[95vh] w-full'>
 				<Image
 					src={`${baseURL}original${TV?.backdrop_path}`}
@@ -35,6 +35,7 @@ function Banner({ original }: Props) {
 					sizes='100vw'
 					className='object-cover'
 				/>
+				<div className='absolute top-0 left-0 z-[5] w-[100vw] h-[100%] bg-gradient1'></div>
 			</div>
 			<h1 className='relative z-[3] text-2xl font-bold drop-shadow md:text-4xl lg:text-7xl'>{TV?.name}</h1>
 			<p className='relative z-[3] text-xs max-w-xs md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl'>{TV?.overview}</p>
