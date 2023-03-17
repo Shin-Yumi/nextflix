@@ -5,6 +5,9 @@ import requests from '@/utils/requests';
 import { Movie, TV } from '@/typings';
 import Banner from '@/components/Banner';
 import Row from '@/components/Row';
+import Modal from '@/components/Modal';
+import { modalState } from '@/atoms/globalAtom';
+import { useRecoilValue } from 'recoil';
 
 interface IndexProps {
 	original: TV[];
@@ -16,8 +19,9 @@ interface IndexProps {
 	animation: Movie[];
 }
 const Home: NextPage<IndexProps> = ({ original, topRated, sf, drama, fantasy, thriller, animation }: IndexProps) => {
+	const showModal = useRecoilValue(modalState);
 	return (
-		<div className='relative h-screen bg-gradient-to-b from-[#333] to-[#141414]'>
+		<div className='relative h-screen bg-gradient-to-b from-[#333] to-[#141414] overflow-x-hidden'>
 			<Head>
 				<title>Netflix clon-coding</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -35,6 +39,7 @@ const Home: NextPage<IndexProps> = ({ original, topRated, sf, drama, fantasy, th
 					<Row title='Animation' movies={animation} />
 				</section>
 			</main>
+			{showModal && <Modal />}
 		</div>
 	);
 };
