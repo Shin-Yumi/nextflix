@@ -11,6 +11,8 @@ export interface Movie {
 	release_date: string;
 	id: number;
 	title: string;
+	name: string;
+	original_name: string;
 	original_language: string;
 	original_title: string;
 	video: boolean;
@@ -27,6 +29,7 @@ export interface TV {
 	first_air_date: string;
 	id: number;
 	name: string;
+	title: string;
 	original_country: string[];
 	original_language: string;
 	original_name: string;

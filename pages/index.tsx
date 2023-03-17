@@ -21,7 +21,7 @@ interface IndexProps {
 const Home: NextPage<IndexProps> = ({ original, topRated, sf, drama, fantasy, thriller, animation }: IndexProps) => {
 	const showModal = useRecoilValue(modalState);
 	return (
-		<div className='relative h-screen bg-gradient-to-b from-[#333] to-[#141414] overflow-x-hidden'>
+		<div className='relative h-screen bg-gradient-to-b from-[#333] to-[#141414]'>
 			<Head>
 				<title>Netflix clon-coding</title>
 				<link rel='icon' href='/favicon.ico' />
