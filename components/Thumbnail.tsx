@@ -19,8 +19,6 @@ function Thumbnail({ movie }: Props) {
 			<Image
 				src={`${baseURL}original${movie?.backdrop_path}`}
 				fill
-				//placeholder='blur'
-				//blurDataURL={`${baseURL}original${movie?.backdrop_path}`}
 				alt={movie?.title}
 				sizes='20vw'
 				className='rounded-sm object-cover md:rounded'

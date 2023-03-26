@@ -18,6 +18,7 @@ interface IndexProps {
 	thriller: Movie[];
 	animation: Movie[];
 }
+
 const Home: NextPage<IndexProps> = ({ original, topRated, sf, drama, fantasy, thriller, animation }: IndexProps) => {
 	const showModal = useRecoilValue(modalState);
 	return (

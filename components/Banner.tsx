@@ -35,8 +35,6 @@ function Banner({ original }: Props) {
 					priority
 					quality={70}
 					fill
-					//placeholder='blur'
-					//blurDataURL='data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=='
 					sizes='100vw'
 					className='object-cover'
 					onLoadingComplete={() => ref.current.remove()}
